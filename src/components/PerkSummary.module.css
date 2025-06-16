@@ -1,0 +1,76 @@
+/* 
+ * This file is part of Tibia Wheel.
+ * Copyright (c) 2022 Maciej Sopyło
+ * 
+ * Tibia Wheel is free software: you can redistribute it and/or modify  
+ * it under the terms of the GNU Lesser General Public License as published by  
+ * the Free Software Foundation, version 3.
+ *
+ * Tibia Wheel is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License 
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+.perk {
+  display: grid;
+  color: white;
+  list-style: none;
+  gap: 0 0.25rem;
+  grid-template:
+    "icon title" 1rem
+    ". text" auto / 1rem 1fr;
+
+  & > em {
+    grid-area: icon;
+    align-self: center;
+  }
+
+  & > h2 {
+    align-self: center;
+    grid-area: title;
+    font-weight: normal;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  &.revelation > h2, & h2.special {
+    text-decoration: underline;
+  }
+
+  & > pre {
+    grid-area: text;
+    display: inline-block;
+    margin: 0.25rem 0;
+    word-wrap: normal;
+    white-space: pre-wrap;
+    max-width: 300px;
+    line-height: 1.1;
+
+    & span {
+      padding-left: 1rem;
+      display: block;
+      background-repeat: no-repeat;
+      background-position-y: 2px;
+
+      &.tier1 {
+        background-image: url(../../assets/skillwheel/icon-augmentation1-inactive.png?as=webp);
+
+        &.active {
+          background-image: url(../../assets/skillwheel/icon-augmentation1-active.png?as=webp);
+        }
+      }
+
+      &.tier2 {
+        background-image: url(../../assets/skillwheel/icon-augmentation2-inactive.png?as=webp);
+
+        &.active {
+          background-image: url(../../assets/skillwheel/icon-augmentation2-active.png?as=webp);
+        }
+      }
+    }
+  }
+}

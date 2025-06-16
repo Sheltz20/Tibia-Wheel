@@ -1,0 +1,85 @@
+/* 
+ * This file is part of Tibia Wheel.
+ * Copyright (c) 2022 Maciej Sopyło
+ * 
+ * Tibia Wheel is free software: you can redistribute it and/or modify  
+ * it under the terms of the GNU Lesser General Public License as published by  
+ * the Free Software Foundation, version 3.
+ *
+ * Tibia Wheel is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License 
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+:root {
+  --size: 522px;
+}
+
+section.wheel {
+  user-select: none;
+  position: relative;
+  width: var(--size) !important;
+  height: calc(100vh - 2rem);
+  background: url(../../assets/skillwheel/backdrop_skillwheel.png?as=webp) no-repeat center top;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    width: var(--size);
+    height: var(--size);
+    transform: rotate(var(--rotation));
+    transition: transform 0.25s;
+    background: url(../../assets/skillwheel/backdrop_skillwheel_front.png?as=webp) no-repeat center top;
+  }
+
+  & section {
+    margin-top: 1rem;
+    position: relative;
+
+    & article:first-child {
+      grid-template-rows: 2rem auto;
+      grid-template-columns: 2rem 1fr;
+
+      & pre {
+        max-width: 100%;
+        grid-column-start: 1;
+        padding-left: 0.5rem;
+      }
+
+      & em {
+        --size: 30px;
+      }
+    }
+
+    & article:nth-child(2) {
+      padding-left: 0.5rem;
+    }
+  }
+
+  & fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    & button {
+      padding: 0.25rem 0.5rem;
+    }
+
+    & span {
+      align-self: center;
+      font-size: 1.1em;
+      padding: 0 1rem;
+    }
+  }
+}
