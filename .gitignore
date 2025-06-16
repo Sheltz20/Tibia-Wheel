@@ -6,3 +6,4 @@ assets/*
 !assets/.gitkeep
 .vercel
 .vscode
+.env
