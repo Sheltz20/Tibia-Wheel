@@ -24,7 +24,7 @@
     padding: 0.5rem;
 
     &.active {
-      border-image: url(../../assets/button-9grid-pressed.png?as=webp);
+      border-image: url('/assets/button-9grid-pressed.png');
       border-image-slice: 1 fill;
     }
   }

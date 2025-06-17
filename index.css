@@ -27,7 +27,7 @@
 }
 
 body {
-  background: url(assets/background.png?as=webp);
+  background: url(/assets/background.png);
   font-family: monospace;
   color: lightgray;
   margin: 0;
@@ -51,12 +51,12 @@ body {
 button {
   color: lightgray;
   border: 1px solid;
-  border-image: url(./assets/button-9grid-idle.png?as=webp);
+  border-image: url(/assets/button-9grid-idle.png);
   border-image-slice: 1 fill;
   font-family: monospace;
   
   &:active {
-    border-image: url(./assets/button-9grid-pressed.png?as=webp);
+    border-image: url(/assets/button-9grid-pressed.png);
     border-image-slice: 1 fill;
   }
 }
@@ -88,7 +88,7 @@ input {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
-  background: url(./assets/background-dark.png?as=webp);
+  background: url(/assets/background-dark.png);
   outline: none;
   color: white;
   font-family: monospace;

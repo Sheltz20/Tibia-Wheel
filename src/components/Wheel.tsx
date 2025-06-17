@@ -18,9 +18,9 @@
 import React, { useContext } from 'react';
 import { RootContext } from '../context';
 
-import largeIcons from '../../assets/skillwheel/icons-skillwheel-largeperks.png?as=webp';
-import mediumIcons from '../../assets/skillwheel/icons-skillwheel-mediumperks.png?as=webp';
-import smallIcons from '../../assets/skillwheel/icons-skillwheel-smallperks.png?as=webp';
+import largeIcons from '/assets/skillwheel/icons-skillwheel-largeperks.png';
+import mediumIcons from '/assets/skillwheel/icons-skillwheel-mediumperks.png';
+import smallIcons from '/assets/skillwheel/icons-skillwheel-smallperks.png';
 
 import styles from './Wheel.module.css';
 import data from '../../data.yaml';

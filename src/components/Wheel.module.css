@@ -24,7 +24,7 @@ section.wheel {
   position: relative;
   width: var(--size) !important;
   height: calc(100vh - 2rem);
-  background: url(../../assets/skillwheel/backdrop_skillwheel.png?as=webp) no-repeat center top;
+  background: url('/assets/skillwheel/backdrop_skillwheel.png') no-repeat center top;
 
   &::before {
     content: '';
@@ -37,7 +37,7 @@ section.wheel {
     height: var(--size);
     transform: rotate(var(--rotation));
     transition: transform 0.25s;
-    background: url(../../assets/skillwheel/backdrop_skillwheel_front.png?as=webp) no-repeat center top;
+    background: url('/assets/skillwheel/backdrop_skillwheel_front.png') no-repeat center top;
   }
 
   & section {

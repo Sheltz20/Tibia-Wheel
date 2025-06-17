@@ -57,18 +57,18 @@
       background-position-y: 2px;
 
       &.tier1 {
-        background-image: url(../../assets/skillwheel/icon-augmentation1-inactive.png?as=webp);
+        background-image: url('/assets/skillwheel/icon-augmentation1-inactive.png');
 
         &.active {
-          background-image: url(../../assets/skillwheel/icon-augmentation1-active.png?as=webp);
+          background-image: url('/assets/skillwheel/icon-augmentation1-active.png');
         }
       }
 
       &.tier2 {
-        background-image: url(../../assets/skillwheel/icon-augmentation2-inactive.png?as=webp);
+        background-image: url('/assets/skillwheel/icon-augmentation2-inactive.png');
 
         &.active {
-          background-image: url(../../assets/skillwheel/icon-augmentation2-active.png?as=webp);
+          background-image: url('/assets/skillwheel/icon-augmentation2-active.png');
         }
       }
     }

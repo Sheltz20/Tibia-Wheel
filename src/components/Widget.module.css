@@ -16,7 +16,7 @@
  */
 
  .widget {
-  border-image: url(../../assets/widget-borderimage.png?as=webp);
+  border-image: url('/assets/widget-borderimage.png');
   border-image-slice: 15 4 4;
   border-image-repeat: repeat;
   border-style: solid;
